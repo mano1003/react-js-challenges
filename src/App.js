@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import StarRating from "./Rating/RatingComponent";
+import DynamicComponent from './DynamicComponent/DynamicComponent';
 
 function App() {
     const [ratingMsgDisplay, setRatingMsgDisplay] = useState('');
@@ -17,6 +18,10 @@ function App() {
             <StarRating onRatingChange = {ratingChange}/>
             <br />
             <strong>{ratingMsgDisplay}</strong>
+
+            <br />
+            <strong>Dynamic Component - Custom Hook</strong>
+            <DynamicComponent />
         </>
     );
 }
