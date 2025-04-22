@@ -27,8 +27,8 @@ const IncrementDecrementComp = () => {
 
       <br />
       <br />
-      <div id="decrementValue">{decrementValue}</div>
-      <div id="incrementValue">{incrementValue}</div>
+      <div id="decrementValue">The Decrement Value is : {decrementValue}</div>
+      <div id="incrementValue">The Increment Value is : {incrementValue}</div>
     </div>
   );
 };
