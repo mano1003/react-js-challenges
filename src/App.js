@@ -9,7 +9,8 @@ import React from 'react';
 // import Cart from './Group_Cart/CartGroup';
 // import CartMainSubCategories from './Group_Cart/CartMainCategory_SubCategory';
 // import MortgageLoan from './MortgageLoan/MortgageLoan';
-import RestaurantFinder from './RestaurantFinder/RestaurantFinder';
+// import RestaurantFinder from './RestaurantFinder/RestaurantFinder';
+import IncrementDecrementComp from './Increment-Decrement/IncrementDecrementComp';
 
 function App() {
     /*
@@ -49,8 +50,10 @@ function App() {
             <CartMainSubCategories /> 
             
             <MortgageLoan />
-            */}
+            
             <RestaurantFinder />
+            */}
+            <IncrementDecrementComp />
         </>
     );
 }
