@@ -59,46 +59,15 @@ const CountryStatesCityDropDown = ({ value }) => {
         setSelectedCountry(countryCode);
         setSelectedState(null); // Reset state when country changes
         setSelectedCity(null); // Reset city when country changes
-        // OnChange({ countryCode, stateCode: null, cityCode: null });
     };
-    // Handle country selection with state and city
-    // This function is called when a country is selected
-    // and updates the selected country, state, and city
-    // It also calls the onChange prop with the selected values
-    // to notify the parent component of the change
-    /*
-    const OnChange = useCallback(
-        (countryCode, stateCode, cityCode) => {
-            setSelectedCountry(countryCode);
-            setSelectedState(stateCode);
-            setSelectedCity(cityCode);
-            onChange({ countryCode, stateCode, cityCode });
-        },
-        [onChange]
-    ); 
-    */ 
     // Handle state selection
     const handleStateSelect = (stateCode) => {
         setSelectedState(stateCode);
         setSelectedCity(null); // Reset city when state changes
-        /*
-        onChange({
-            countryCode: selectedCountry,
-            stateCode,
-            cityCode: null,
-        });
-        */
     };
     // Handle city selection
     const handleCitySelect = (cityCode) => {
         setSelectedCity(cityCode);
-        /*
-        onChange({
-            countryCode: selectedCountry,
-            stateCode: selectedState,
-            cityCode,
-        });
-        */
     };
     
     // Memoize the dropdown items to avoid unnecessary re-renders
