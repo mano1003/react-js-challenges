@@ -117,10 +117,10 @@ const CountryStatesCityDropDown = ({ value }) => {
             <br />
             <Container>
                 <Row>
-                    <Col>
-                        {'Country'}
+                    <Col xs lg="1">
+                        <span style={{verticalAlign:'-webkit-baseline-middle'}}>Country</span>
                     </Col>
-                    <Col>
+                    <Col md="auto">
                         <Dropdown>
                             <Dropdown.Toggle variant="success" id="dropdown-basic">
                                 {selectedCountry
@@ -141,10 +141,10 @@ const CountryStatesCityDropDown = ({ value }) => {
                     <>
                     <br />
                         <Row>
-                            <Col>
-                                {'State'}
-                                </Col>
-                            <Col>
+                            <Col xs lg="1">
+                                <span style={{verticalAlign:'-webkit-baseline-middle'}}>State</span>
+                            </Col>
+                            <Col md="auto">
                                 <Dropdown>
                                     <Dropdown.Toggle variant="success" id="dropdown-basic">
                                         {selectedState
@@ -166,10 +166,10 @@ const CountryStatesCityDropDown = ({ value }) => {
                     <>
                     <br />
                         <Row>
-                            <Col>
-                                {'City'}
+                            <Col xs lg="1">
+                                <span style={{verticalAlign:'-webkit-baseline-middle', paddingTop: '0.75rem', paddingBottom: '0.75rem'}}>City</span>
                             </Col>
-                            <Col>
+                            <Col md="auto">
                                 <Dropdown>
                                     <Dropdown.Toggle variant="success" id="dropdown-basic">
                                         {selectedCity
