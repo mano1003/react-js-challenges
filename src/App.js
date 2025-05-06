@@ -11,7 +11,14 @@ import React from 'react';
 // import MortgageLoan from './MortgageLoan/MortgageLoan';
 // import RestaurantFinder from './RestaurantFinder/RestaurantFinder';
 // import IncrementDecrementComp from './Increment-Decrement/IncrementDecrementComp';
-import CountryStatesCityDropDown from './Hierarchy_Dropdown/CountryStatesCityDropDown';
+// import CountryStatesCityDropDown from './Hierarchy_Dropdown/CountryStatesCityDropDown';
+import Accordion from './Accordion/Accordion';
+// Accordion component usage example
+ const items = [
+   { title: "Item 1", content: "Content for item 1" },
+   { title: "Item 2", content: "Content for item 2" },
+   { title: "Item 3", content: "Content for item 3" },
+ ];
 
 function App() {
     /*
@@ -55,8 +62,10 @@ function App() {
             <RestaurantFinder />
             
             <IncrementDecrementComp />
-            */}
+            
             <CountryStatesCityDropDown />
+            */}
+            <Accordion items={items} />
         </>
     );
 }
