@@ -12,14 +12,17 @@ import React from 'react';
 // import RestaurantFinder from './RestaurantFinder/RestaurantFinder';
 // import IncrementDecrementComp from './Increment-Decrement/IncrementDecrementComp';
 // import CountryStatesCityDropDown from './Hierarchy_Dropdown/CountryStatesCityDropDown';
-import Accordion from './Accordion/Accordion';
+// import Accordion from './Accordion/Accordion';
+// import ResponsiveUI from './ResponsiveUI/ResponsiveUI';
+import RandomNumbersBox from "./RandomNumbersBox/RandomNumbersBox";
 // Accordion component usage example
+/*
  const items = [
    { title: "Item 1", content: "Content for item 1" },
    { title: "Item 2", content: "Content for item 2" },
    { title: "Item 3", content: "Content for item 3" },
  ];
-
+*/
 function App() {
     /*
     const [ratingMsgDisplay, setRatingMsgDisplay] = useState('');
@@ -64,8 +67,10 @@ function App() {
             <IncrementDecrementComp />
             
             <CountryStatesCityDropDown />
+            
+            <ResponsiveUI />
             */}
-            <Accordion items={items} />
+            <RandomNumbersBox />
         </>
     );
 }
